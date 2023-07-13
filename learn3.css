@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.leftDash {
+    position: fixed;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashTopbar {
+    width: calc(100% - 2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin: 0 1rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+}
+
+.dashTopbar img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.rightDash {
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    left: 20%;
+}
+
+hr {
+    position: absolute;
+    width: calc(100% - 6rem);
+    margin: 0 3rem;
+    top: 6rem;
+    border: 1px solid #E0EDFF;
+}
+
+.content {
+    width: fit-content;
+    padding: 3rem;
+    margin: auto;
+}
+
+.CreateLearn{
+    margin-top: 5rem;
+    padding: 3rem 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.entercirclename{
+    display: flex;
+    gap: 1rem;
+}
+
+.entercirclename input{
+    width: 100%;
+    padding: .5rem 1rem;
+    text-align: center;
+    background-color: #F3F3F4;
+    color: #665C7A;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.CreateLearn button{
+    padding: .5rem 2rem;
+    background-color: #456FF6;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+@media(width<800px) {
+    .leftDash {
+        width: 0%;
+    }
+
+    .rightDash {
+        width: 100%;
+        left: 0;
+    }
+
+    .dashTopbar {
+        font-size: 1rem;
+        padding: 1.5rem .5rem;
+    }
+
+    hr {
+        position: absolute;
+        width: 90%;
+        margin: 0 5%;
+        border: 1px solid #E0EDFF;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .CreateLearn{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .create{
+        margin: 1rem;
+    }
+
+}
