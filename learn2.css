@@ -109,21 +109,32 @@ hr {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
+    text-align: center;
 }
 
-.MeetingOn {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: .8rem;
+.ScheduleOn p{
+    color: #456FF6;
 }
 
-.MeetingBtn {
+.InputSchedule{
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.InputSchedule div{
+    display: flex;
+    gap: 1rem;
+}
+
+.InputSchedule input{
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid #E0EDFF;
+    outline: none;
 }
 
 .BtnBtn {
@@ -214,7 +225,7 @@ hr {
     border-radius: 1rem;
     padding: 2rem;
     margin-top: 1rem;
-    height: 330px;
+    height: 400px;
     overflow: hidden;
     overflow-y: scroll;
 }
